@@ -37,7 +37,10 @@ baritone
 - If all the possible search results have been exhausted, and the goal_word is not found, the search concludes.
 
 # Usage
-
+`
 python ladders.py startword goalword
+`
 
+No additional packages are needed to run this code.
+The output ladder would be written in the file output.txt
 Note: startword and goalword should be words present in wordList.txt
