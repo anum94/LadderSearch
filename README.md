@@ -1,4 +1,5 @@
-# Problem Ladders
+# Word Ladder 
+https://en.wikipedia.org/wiki/Word_ladder
 
 Ladders is a word game where a player tries to get from one word (the “start word”) to another (the
 “goal word”) in as few steps as possible. In each step, the player must either add one letter to the word
@@ -24,7 +25,7 @@ find the shortest ladder between a start word and a goal word. All words in betw
 file wordList.txt provided in Moodle in the folder example solution.
 Implementation of the Ladder Search game in python using Breadth Search to find a ladder from start word to end word given a dictionary
 
-#My Solution
+#Solution using breadth-first search algorithm
 
 * My solution is breadth first search, in my algo all those words are created first that are one hop away from the start_word (and are also a valid dictionary word) and added into a que. Once all the words have been added, the algo compares the que elements in FIFO order to the goal_order. If the output is not found, the algo computes ladders (two/three hops away or se) from all the elements of the que and so on until the correct ladder is found. If all the possible search results have been exhausted and the goal_word is not found, it is concluded.
 * I also used certain optimization techniques in order to reduce the search time
@@ -33,4 +34,4 @@ Implementation of the Ladder Search game in python using Breadth Search to find 
 
 python ladders.py startword goalword
 
-where startword and goalword should be words present in wordList.txt
+Note: startword and goalword should be words present in wordList.txt
